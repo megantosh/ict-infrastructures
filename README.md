@@ -144,7 +144,7 @@ The datacenter is a place where we concentrate IT system in order to reduce cost
 ### Cooling
 
 Today cooling is air based. Just the beginning for liquid cooling.  
-The air pushed though the server gets a 10/15 degrees temperature augment.
+The air pushed through the server gets a 10/15 degrees temperature augment.
 
 #### CRAC: Computer Room Air Conditioner
 
@@ -203,7 +203,7 @@ For example an idle server with 2 CPUs (14 cores each) consumes 140 Watts.
 ### Power Distribution
 The Industrial current has 380 Volts in 3 phases. The amount of current allowed in a data center are the Ampere on the *PDU* (Power Distribution Unit).
 
-There are one or more lines (for reliability and fault tolerance reasons) coming from different generators to the datacenter (i.e. each line 80 KW , 200 A more or less. Can use it for 6 racks 32A / rack. Maybe I will not use the whole 32 A so I can put more racks).  
+There are one or more lines (for reliability and fault tolerance reasons) coming from different suppliers (or generators) to the datacenter (i.e. each line 80 KW , 200 A more or less. Can use it for 6 racks 32A / rack. Maybe I will not use the whole 32 A so I can put more racks).  
 
 The lines are attached to an *UPS Uninterruptible Power Supply/Source*. It is a rack or half a rack with batteries (not enough to keep-on the servers) that in some cases can power the DC for ~20 minutes. There are a *Control Panel* and a *Generator*. When the power lines fail the UPS is active between their failure and the starting of the generator.  The energy that arrives to the UPS should be divided among the servers and the switches.
 
@@ -228,7 +228,7 @@ The fabric is the interconnection between nodes inside a datacenter. We can thin
 We refer to North-South traffic indicating the traffic outgoing and incoming to the datacenter (internet), while we refer to East-West as the internal traffic between servers.
 
 ## Ethernet
-The connection can be performed with various technologies, the most famous is **Ethernet**, commonly used in Local Area Networks (LAN) and Wide Area Networks (WAN). Ethernet use twisted pair and optic fiber links. Ethernet as some famous features such as 48-bit MAC address and Ethernet frame format that influenced other networking protocols. 
+The connection can be performed with various technologies, the most famous is **Ethernet**, commonly used in Local Area Networks (LAN) and Wide Area Networks (WAN). Ethernet use twisted pair copper cables and optic fiber links. Ethernet as some famous features such as 48-bit MAC address and Ethernet frame format that influenced other networking protocols. 
 
 **MTU** (Maximum Transfer Unit) up to 9 KB with the so called **Jumbo Frames**.
 On top of ethernet there are TCP/IP protocols (this is a standard), they introduce about 70-100 micro sec of latency.
@@ -286,7 +286,7 @@ From left to right: RJ45 plug, SFP+ and QSFP+ **transceiver module**, LC connect
 **RJ45** plug supports 10/100 Mbps, 1/2.5/5 Gbps but in datacenters there are almost no installations of it.  
 Cables have categories: 
 - cat4
-- cat5  
+- cat5/5e  
 - cat6  
 
 2.5/5 Gbps are new standards working on cat5 and cat6 cables respectively, in order to deliver more bandwidth to the WiFi access point.  
